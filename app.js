@@ -28,7 +28,7 @@ const listSchema = {
 const Item = mongoose.model('Item', itemsSchema);
 const List = mongoose.model('List', listSchema);
 const item1 = new Item({
-  name: 'Buy groceries',
+  name: 'default item',
 });
 
 // const item2 = new Item({
