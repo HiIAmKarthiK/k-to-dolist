@@ -11,10 +11,13 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb://localhost:27017/todolistDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  'mongodb+srv://admin-karthik:mongo77@cluster0.gnfaa.mongodb.net/todolistDB',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 const itemsSchema = {
   name: String,
 };
@@ -128,6 +131,11 @@ app.post('/delete', function (req, res) {
   }
 });
 
-app.listen(3000, function () {
+let port = process.env.PORT;
+if (port == null || port == '') {
+  port = 3000;
+}
+
+app.listen(port, function () {
   console.log('server running successfully');
 });
