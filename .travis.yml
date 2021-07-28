@@ -1,10 +1,9 @@
 language: node_js
 node_js:
-- 12.18.2
+  - 12.18.2
 script: 'true'
 deploy:
   provider: heroku
-  api_key:
-    secure: CNd9JuRyG/z4Ppz3Dim/qCPQ0b/DHqzzgzvlCS5QDEuTITSm3plevlPNlr4Z7PvWYeWQrlxY73x8EtUK+afn+tRK6kjNxbi6IKP3RkHGFzm5vTDlh57F41juJDvzWfilDP90LZ+WsWZsNHmgxGIucV4CXq4g0kD+kWkBZYymqOkV/s61xO88AGSZNogsR+OUHDVmKPusqqC2ZGjdtH8ml52bxeuu2YDLzFl/ftW/0qplsjl5+koGlc6/AIbVIeGgMyTjRr6jYhqWXl421YVSskLAq2stJkfzJdHCr+TejIH16XN1W6sDa7p4FtuBk85+q20OGnzuvvZmUh6SCYpkufR75ITwycfJd7QLjD3t8+H8SPE0DH/NzCkgd1krV0L0wUtMlJ1H6sLT9AKdMsVVLOq2fexFuq/N3+orU0zTEsrOC8iJ4PbYVlqPPVZVUnhx3S/2F+ap/t/+1LkBTPm9Mb3mpKZ26RPYcZaZsERSbCX/avlAd86p/hPmH3VChVAvZTDqylkZO7DFhS7X0ZTZ9Z89HgDoPLh9x1byz+ZS26gu/ThOrYXYwxKTWA5tk4Lfa8pyekZRbwxWgxeZCgZ3d+l9uS4zhB/3pDnpsC1ghw1U/IwTT073ZNIhJMfGYz3Y1nuxo30ZhCa3lINHXxnDUBlG+Rn3WZAqw2xJm+m+qyw=
+  api_key: $API_KEY
   on:
     all_branches: true
