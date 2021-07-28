@@ -7,6 +7,7 @@ script: 'true'
 
 deploy:
   provider: heroku
-  api_key: b9e18cf1-bad9-472d-b8e4-22b0743292ad
+  api_key:
+    secure: 'S+82/uIWpsLtf9jPYp1O+DDbMNiiJhJaMZ1RUOHhkRnBUyHW93wXLKj3ZkWHbWCM4XbzL/LJfZzVMwXfa7/nGxN785X2NKbwYZfQJaY1lfKSoMrCc0vyG27/u56PMBBSz2JgD2NL7gzUMgRX693qBro4y/9N2SB4w5oJZc7QZxmHSkIy2nUOjpii1VeQWJwGy7tyjv4JVocoxxUWo4cbwBjmTld2rzYicFf8bAM9aQkAuRyjU9kWdctx75NXhvlruzmeaWZmlHYOiXexELRjqhXANhvvd6vR00VfJD9KizTRjhLYW+1rY0jKcWeDc/D+CfCdCp2Avk7ftOifSucJMwdoxFtAHtv3CxLbGDxbG0t1Itb1mqCm/pKLfpvjxFzOoJ0WsGIIsVqLs1uibKTagoj5QUOpxnexIjR9bf7+AY0m4ikkGV8JPCLmmVsnm7jx8YlrErIci2D7e8/TdKZJqbKHQdrsJ3cVHxQm98fw/2YalQDN7zbHU1a5Thwd5/3tguV+HAWf/9Weq1/afzA0OhIyIaM+R3JS8JxaH03rr9STVMakpwt6kGG5oAIUvjuavlWx+Em476ey1++fMqIvXV/nF7veqKd78kK+/qWD6zPvJQfschDHrOb/XmBslOQ8hqtnOXFhhhNgl10ZCVVhYf3ecB0FWrD1ZQZl2uWJJyo='
   on:
     all_branches: true
