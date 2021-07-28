@@ -7,6 +7,6 @@ script: 'true'
 
 deploy:
   provider: heroku
-  api_key: $API_KEY
+  api_key: b9e18cf1-bad9-472d-b8e4-22b0743292ad
   on:
     all_branches: true
